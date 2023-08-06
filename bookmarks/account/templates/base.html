@@ -6,17 +6,17 @@
 </head>
 <body>
 <div id="header">
-    <span class="logo">Bookmarks</span>
+    <span class="logo">Панель управления</span>
     {% if request.user.is_authenticated %}
     <ul class="menu">
         <li {% if section == "dashboard" %}class="selected"{% endif %}>
             <a href="{% url 'dashboard' %}">Моя панель управления</a>
         </li>
         <li {% if section == "images" %}class="selected"{% endif %}>
-            <a href="#">Images</a>
+            <a href="#">Галерея</a>
         </li>
         <li {% if section == "people" %}class="selected"{% endif %}>
-            <a href="#">People</a>
+            <a href="#">Люди</a>
         </li>
     </ul>
     {% endif %}
